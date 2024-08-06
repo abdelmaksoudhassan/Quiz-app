@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --primary-color: #0DFF92;
+    --dark-color: #222222;
+    --light-color: #f0f0f0;
+}
+
+body,
+html {
+    background: var(--dark-color)
+}
+
+
+.container {
+    margin: 0px 100px;
+    padding: 50px 0px;
+}
+
+.container .title {
+    text-align: center;
+    border: 5px solid var(--primary-color);
+    padding: .3em .2em;
+    border-radius: 4px;
+}
+
+.text-light {
+    color: var(--light-color)
+}
+
+.container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.container .grid {
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
+.container .btn {
+    padding: .2em 1.2em;
+    border: none;
+    border-radius: .1em;
+    font-size: 1.2em;
+}
+
+.container .btn:hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    color: #202020;
+}
+
+.next {
+    background-color: var(--primary-color);
+    justify-self: flex-end;
+}
+
+.prev {
+    background-color: #faff5a;
+    justify-self: flex-start;
+}
+
+ul li {
+    color: #AAAAAA;
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #333;
+    margin: 10px 0px;
+    padding: 10px 0px;
+}
+
+ul li input[type=radio] {
+    accent-color: var(--dark-color);
+    transform: scale(1.5);
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        margin: 0px 20px;
+    }
+    .container .btn {
+        padding: .2em .5em;
+        font-size: 1em;
+    }
+}
